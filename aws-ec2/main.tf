@@ -22,7 +22,7 @@ resource "aws_security_group" "allow_traffic" {
     name        = "allow_traffic"
     description = "Allow inbound traffic"
 
-    ingress {
+    ingress { 
         from_port   = 22
         to_port     = 22
         protocol    = "tcp"
@@ -57,7 +57,7 @@ resource "aws_instance" "app_server" {
   key_name = aws_key_pair.ssh-key.key_name
   vpc_security_group_ids = [aws_security_group.allow_traffic.id ]
 
-  user_data = file("${path.module}/init.sh")
+  user_data= file("${path.module}/init.sh")
 
   ebs_block_device {
     device_name = "/dev/sda1"
@@ -66,6 +66,6 @@ resource "aws_instance" "app_server" {
   }
   
   tags = {
-    Name = "ExampleAppServerInstance"
+    Name = "Deployment Server"
   }
 }
