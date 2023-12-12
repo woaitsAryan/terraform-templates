@@ -18,8 +18,10 @@ Follow these steps to run the Terraform templates:
     cd /path/to/template
     ```
 
-3. **Set Up Your Environment Variables**: Each template directory contains a `.env.sample` file. Copy the contents of this file into a new file named `.env` in the same directory, and replace the placeholder values with your actual AWS credentials.
-
+3. **Set Up Your Environment Variables**: Each template directory contains a `.env.sample` file. Copy the contents of this file into a new file named `.env` in the same directory, and replace the placeholder values with your actual required credentials. Then run:
+    ```bash
+    source .env
+    ```
 4. **Initialize Terraform**: Run the following command to download the necessary provider plugins for Terraform:
 
     ```bash
