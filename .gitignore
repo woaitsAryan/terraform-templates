@@ -4,3 +4,5 @@
 terraform.tfstate.d/
 .env
 .terraform*
+.terraform.lock.hcl
+.terraform.tfstate.lock.info
