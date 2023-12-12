@@ -9,9 +9,8 @@ terraform {
 }
 
 provider "google" {
-  project = "terraform-test-407913"
+  project = "project_id"
   region  = "us-central1"
-  zone    = "us-central1-a"
 }
 
 resource "google_compute_network" "vpc_network" {
@@ -66,5 +65,5 @@ resource "google_compute_instance" "default" {
 
 resource "google_compute_project_metadata_item" "default" {
   key   = "ssh-keys"
-  value = "aryan:${file("~/.ssh/id_rsa.pub")}"
+  value = "admin:${file("~/.ssh/id_rsa.pub")}"
 }
