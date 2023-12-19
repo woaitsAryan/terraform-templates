@@ -8,9 +8,24 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
+variable "project-id" {
+  description = "Project ID (e.g. maximal-terrain-400019)"
+  type        = string
+}
+
+variable "region" {
+  description = "GCP Region (e.g. asia-south1)"
+  type        = string
+}
+
+variable "project-name"{
+  description = "Project Name (e.g. terraform-gcp)"
+  type        = string
+}
+
 provider "google" {
-  project = "project_id"
-  region  = "us-central1"
+  project = var.project-id
+  region  = var.region
 }
 
 resource "google_compute_network" "vpc_network" {
@@ -35,16 +50,17 @@ resource "google_compute_firewall" "allow_traffic" {
 }
 
 resource "google_compute_instance" "default" {
-  name         = "app-server"
+  name         = var.project-name
   machine_type = "e2-small"
-  zone         = "us-central1-a"
-
+  zone         = "${var.region}-a"
+  
   boot_disk {
     initialize_params {
       image = "ubuntu-os-cloud/ubuntu-2204-lts"
       size  = 20
     }
   }
+
 
   network_interface {
     network = google_compute_network.vpc_network.name

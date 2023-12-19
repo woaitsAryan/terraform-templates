@@ -4,17 +4,7 @@ This repository provides a **Terraform configuration** and an **initialization s
 
 ## Prerequisites
 
-Before you run the Terraform configuration, you can set your own AWS region where you want your resources to be created. You can do this in the provider block of your Terraform configuration:
-
-```terraform
-provider "aws" {
-    region = "your-region"
-}
-```
-
-Replace your-region with the region where you want your resources to be created (e.g., us-east-1).
-
-Also, you need to authenticate Terraform to use AWS. Follow the guide on the [Terraform AWS Provider documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#environment-variables) to set up the necessary environment variables.
+You need to authenticate Terraform to use AWS. Follow the guide on the [Terraform AWS Provider documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#environment-variables) to set up the necessary environment variables.
 
 ## What's Included
 

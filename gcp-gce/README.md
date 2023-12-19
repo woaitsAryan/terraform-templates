@@ -4,14 +4,7 @@ This repository provides a **Terraform configuration** and an **initialization s
 
 ## Prerequisites
 
-Before you run the Terraform configuration, you need to set your own Google Cloud Project ID and the region where you want your resources to be created. You can do this in the provider block of your Terraform configuration:
-
-```terraform
-provider "google" {
-  project = "your-gcp-project-id"
-  region  = "your-region"
-}
-```
+Before you run the Terraform configuration, you need to make a project in your GCP account and enable the Compute Engine API in it.
 
 Refer to the [Terraform Google Provider documentation](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/getting_started#adding-credentials) for instructions on how to link your Google Cloud Platform credentials with Terraform.
 

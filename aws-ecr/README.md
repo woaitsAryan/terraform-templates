@@ -19,4 +19,12 @@ To run this script, navigate to the directory containing the script in your term
 bash push.sh
 ```
 
+or you can try running the executable directly(mainly for Windows users):
+    
+```bash
+chmod +x push
+
+./push
+```
+
 This will start the script, which will guide you through the process of pushing a Docker image to an AWS ECR repository.

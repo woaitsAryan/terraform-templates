@@ -9,8 +9,13 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
+variable "region" {
+  description = "AWS Region (e.g. ap-south-1)"
+  type        = string
+}
+
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 }
 
 resource "aws_key_pair" "ssh-key"{
