@@ -79,3 +79,8 @@ resource "aws_instance" "app_server" {
     Name = var.name
   }
 }
+
+output "ssh_public_ip" {
+  description = "SSH into the EC2 by ubuntu@public_ip"
+  value = "type ssh ubuntu@${aws_instance.app_server.public_ip}"
+}

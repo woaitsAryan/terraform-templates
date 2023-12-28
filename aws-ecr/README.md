@@ -17,24 +17,24 @@ To use this code, follow these steps:
 
 1. Open your terminal and clone this repository by running the following command:
 
-    ```bash
+```bash
     git clone https://github.com/woaitsAryan/terraform-templates.git
-    ```
+```
 2. Navigate to the aws-s3 directory in the cloned repository:
     
-    ```bash
+```bash
      cd aws-ecr
-    ```
+```
 3. Run the script
-    ```bash
+```bash
     bash push.sh
-    ```
+```
     or you can try running the executable directly(mainly for Windows users):
     
-    ```bash
+```bash
     chmod +x push
 
     ./push
-    ```
+```
 
 This will start the script, which will guide you through the process of pushing a Docker image to an AWS ECR repository.
