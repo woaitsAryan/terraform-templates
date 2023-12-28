@@ -15,14 +15,12 @@ locals {
     account_id = data.aws_caller_identity.current.account_id
 }
 
-variable "region" {
-  description = "AWS Region (e.g. ap-south-1)"
-  type        = string
+locals {
+  caller_arn = data.aws_caller_identity.current.arn
 }
 
-
-variable "username" {
-  description = "IAM Username"
+variable "region" {
+  description = "AWS Region (e.g. ap-south-1)"
   type        = string
 }
 

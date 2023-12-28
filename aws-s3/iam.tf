@@ -7,7 +7,7 @@ resource "aws_iam_role" "s3_role" {
         {
             "Action": "sts:AssumeRole",
             "Principal": {
-                "AWS": "arn:aws:iam::${local.account_id}:user/${var.username}"
+                "AWS": "${local.caller_arn}"
             },
             "Effect": "Allow",
             "Sid": ""
