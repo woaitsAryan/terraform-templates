@@ -1,5 +1,5 @@
 
-# S3 Bucket Provisioning
+# S3(Storage) Bucket Provisioning
 
 This repository contains Terraform code for provisioning an AWS S3 bucket with specific lifecycle rules and an IAM role for secure access. It also enables S3 versioning.
 

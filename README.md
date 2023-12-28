@@ -8,40 +8,6 @@ Each directory in this repository contains a different Terraform template. Each 
 
 ## How do I run these templates?
 
-Follow these steps to run the Terraform templates:
-
-1. **Install Terraform**: If you haven't installed Terraform yet, you can do so by following the instructions on this [link](https://developer.hashicorp.com/terraform/install).
-
-2. **Navigate to the Template Directory**: Use the `cd` command to navigate into the directory of the template you want to run. For example:
-
-    ```bash
-    cd /path/to/template
-    ```
-
-3. **Set Up Your Environment Variables**: Each template directory contains a `.env.sample` file. Copy the contents of this file into a new file named `.env` in the same directory, and replace the placeholder values with your actual required credentials. Then run:
-    ```bash
-    source .env
-    ```
-4. **Initialize Terraform**: Run the following command to download the necessary provider plugins for Terraform:
-
-    ```bash
-    terraform init
-    ```
-
-5. **Validate the Configuration**: Run the following command to check for any errors in the configuration:
-
-    ```bash
-    terraform validate
-    ```
-
-6. **Apply the Configuration**: If the configuration is valid, run the following command to create the resources defined in the configuration:
-
-    ```bash
-    terraform apply
-    ```
-
-7. **Destroy the Resources**: When you're done with the resources, you can destroy them by running the following command:
-
-    ```bash
-    terraform destroy
-    ```
+1. Ensure you have Terraform installed on your machine. If not, you can download it from the [official Terraform website](https://www.terraform.io/downloads.html).
+2. Install AWS CLI on your system by following the instructions on the [official AWS CLI Installation Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and then setting it up using [official AWS CLI Quickstart Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html).
+3. Go to the directory of the template you want to run and follow the instructions in the README file.

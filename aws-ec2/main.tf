@@ -14,6 +14,11 @@ variable "region" {
   type        = string
 }
 
+variable "name" {
+  description = "Name of the EC2 instance"
+  type = string
+}
+
 provider "aws" {
   region = var.region
 }
@@ -71,6 +76,6 @@ resource "aws_instance" "app_server" {
   }
   
   tags = {
-    Name = "Deployment Server"
+    Name = var.name
   }
 }

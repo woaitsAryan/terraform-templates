@@ -1,12 +1,8 @@
-# Quick Deployment of a Website or Service
+# Quick Deployment of a Website or Service using a VM(EC2) 
 
 This repository provides a **Terraform configuration** and an **initialization script** for quickly deploying a website or service on an AWS EC2 instance.
 
-## Prerequisites
-
-You need to authenticate Terraform to use AWS. Follow the guide on the [Terraform AWS Provider documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#environment-variables) to set up the necessary environment variables.
-
-## What's Included
+## Features
 
 The **Terraform configuration** sets up the following resources on AWS:
 
@@ -25,3 +21,34 @@ The **initialization script** (`init.sh`) is run on the EC2 instance when it sta
 - Installs Git and configures it to use the rebase strategy when pulling.
 
 With these resources and configurations, you can quickly deploy a website or service on AWS. The website or service would be accessible via HTTP or HTTPS, and you would be able to SSH into the EC2 instance for management tasks.
+
+## Usage
+
+To use this code, follow these steps:
+
+1. Ensure you have Terraform installed on your machine. If not, you can download it from the [official Terraform website](https://www.terraform.io/downloads.html).
+
+2. Open your terminal and clone this repository by running the following command:
+
+    ```bash
+    git clone https://github.com/woaitsAryan/terraform-templates.git
+    ```
+3. Navigate to the aws-s3 directory in the cloned repository:
+    
+    ```bash
+     cd aws-ec2
+    ```
+4. Run the following command to initialize Terraform:
+
+    ```bash
+    terraform init
+    ```
+5. Apply the Terraform configuration:
+
+
+
+    ```bash
+    terraform apply
+    ```
+
+You will be prompted to enter the name of the EC2 instance and a region. After entering these values, Terraform will provision the resources.
