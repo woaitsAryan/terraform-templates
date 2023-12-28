@@ -30,29 +30,28 @@ To use this code, follow these steps:
 
 2. Open your terminal and clone this repository by running the following command:
 
-```bash
+    ```bash
     git clone https://github.com/woaitsAryan/terraform-templates.git
-```
+    ```
 3. Navigate to the aws-s3 directory in the cloned repository:
     
-```bash
+    ```bash
      cd aws-ec2
-```
+    ```
 4. Run the following command to initialize Terraform:
 
-```bash
+    ```bash
     terraform init
-```
+    ```
 5. Apply the Terraform configuration:
 
-```bash
+    ```bash
     terraform apply
-```
+    ```
 
 You will be prompted to enter the name of the EC2 instance and a region. After entering these values, Terraform will provision the resources.
 
 To destroy the resources, run the following command:
 
-```bash
+
     terraform destroy
-```
