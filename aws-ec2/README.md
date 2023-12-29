@@ -1,6 +1,6 @@
 # Quick Deployment of a Website or Service using a VM(EC2) 
 
-This repository provides a **Terraform configuration** and an **initialization script** for quickly deploying a website or service on an AWS EC2 instance.
+This repository provides a **Terraform configuration** and an **initialization script** for quickly deploying a website or service on an AWS EC2 instance **in us-east-1 region**. To use a different region, change the value of the `region` in line 18 and find an appropriate AMI for that region by searching for `AMI Catalog` in AWS Management Console and change the value of `ami` in line 60.
 
 ## Features
 

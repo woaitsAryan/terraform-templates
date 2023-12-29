@@ -9,11 +9,6 @@ This repository contains Terraform code to set up a DynamoDB table with a DAX (D
 - Sets up an IAM role that grants a user full access to the DynamoDB table and DAX cluster.
 - Enables point-in-time recovery for the DynamoDB table, allowing you to restore the table to any point in the last 35 days.
 
-## Prerequisites
-
-- [Terraform](https://www.terraform.io/downloads.html) installed on your machine.
-- An AWS account and your AWS credentials configured locally.
-
 ## Usage
 
 To use this code, follow these steps:
