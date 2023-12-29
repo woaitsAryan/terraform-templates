@@ -28,7 +28,7 @@ To use this code, follow these steps:
 3. Navigate to the aws-s3 directory in the cloned repository:
     
     ```bash
-     cd aws-dynamodb
+    cd aws-dynamodb
     ```
 4. Run the following command to initialize Terraform:
 
